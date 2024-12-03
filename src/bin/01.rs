@@ -44,7 +44,7 @@ pub fn part_two(input: &str) -> Option<u32> {
     for j in fs {
         match freq.get(&(j)) {
             None => {}
-            Some(val) => {ans += (j * val);}
+            Some(val) => {ans += j * val;}
         }
     }
     
